@@ -45,7 +45,6 @@ echo "Homebrew: updating default unix tools..."
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 brew install zsh-syntax-highlighting
-chsh -s $(which zsh)
 
 brew install bash-completion
 brew install coreutils
@@ -57,8 +56,10 @@ brew install moreutils
 # Install binaries and other packages
 ###############################################################################
 echo "Homebrew: installing binaries and other packages..."
+brew tap starkandwayne/cf
 brew install ffmpeg --with-libvpx
 brew install git
+brew link --force git
 brew install heroku/brew/heroku
 brew install httpie
 brew install imagemagick --with-webp
@@ -74,17 +75,27 @@ brew install wget --with-iri
 brew install kubernetes-cli
 brew install kubernetes-helm
 brew install asciinema
-brew install bosh-cli
+brew install cloudfoundry/tap/bosh-cli
 brew install go
-brew install govc
+brew install govmomi/tap/govc
 brew install kubectx
 brew install lolcat
 brew install nmap
-brew install om
-brew install uaa-cli
+brew install starkandwayne/cf/om
+brew install starkandwayne/cf/uaa-cli
 brew install openshift-cli
 brew install sqlite
 brew install watch
+brew install draft
+brew install f3
+brew install faas-cli
+brew install git-flow-avh
+brew install jq
+brew install kops
+brew install wakeonlan
+brew install grep
+brew install openssh
+brew install screen
 
 
 ###############################################################################
@@ -130,18 +141,55 @@ echo "Homebrew Cask: installing apps..."
 brew cask install 1password
 brew cask install adobe-creative-cloud
 brew cask install alfred
+brew cask install cleanmymac
 brew cask install dash
-brew cask install docker
+brew cask install discord
+brew cask install homebrew/cask-versions/docker-edge
 brew cask install dropbox
 brew cask install google-cloud-sdk
 brew cask install google-chrome
 brew cask install iterm2
+brew cask install kaleidoscope
 brew cask install obs
 brew cask install postman
+brew cask install powershell
+brew cask install vagrant
+brew cask install vagrant-manager
+brew cask install virtualbox
 brew cask install slack
 brew cask install spotify
+brew cask install sourcetree
+brew cask install snagit
+brew cask install vlc
+brew cask install microsoft-teams
+brew cask install vmware-fusion
 brew cask install visual-studio-code
+brew cask install the-unarchiver
 brew cask install whatsapp
+brew cask install minikube
+brew cask install minishift
+brew cask install joinme
+brew cask install cyberduck
+brew cask install mongodb-compass
+brew cask install snagit
+brew cask install camtasia
+brew cask install smcfancontrol
+brew cask install homebrew/cask-drivers/razer-synapse
+brew cask install parsec
+brew cask install onedrive
+brew cask install spotify
+brew cask install homebrew/cask-drivers/synology-cloud-station-backup
+brew cask install homebrew/cask-drivers/synology-drive
+brew cask install timing
+brew cask install plex-media-player
+brew cask install backblaze
+brew cask install charles
+brew cask install zoomus
+brew cask install private-internet-access
+brew cask install wireshark
+brew cask install spotify-notifications
+brew cask install tunnelblick
+brew cask install evernote
 
 
 ###############################################################################
@@ -156,7 +204,7 @@ open /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.
 ###############################################################################
 # Cleanup
 ###############################################################################
-brew cask cleanup
+brew cleanup
 
 
 ###############################################################################
@@ -165,10 +213,23 @@ brew cask cleanup
 echo "mas-cli: installing Mac App Store apps..."
 # DaisyDisk
 mas install 411643860
-# Speedtest
-mas install 1153157709
-# WiFi Explorer
-mas install 494803304
+# OneDrive
+mas install 823766827
+# Todoist
+mas install 585829637
+# Deliveries
+mas install 924726344
+# Neptunes
+mas install 1006739057
 
+###############################################################################
+# Install fonts for iTerm
+###############################################################################
+echo "Installing Fonts"
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
 
 echo "macOS Config, Dev Tools, Apps are Done Setup!"
