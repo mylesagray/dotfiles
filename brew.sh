@@ -156,7 +156,7 @@ brew cask install powershell
 brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install virtualbox
-brew cask install slack
+brew cask install slack-beta
 brew cask install spotify
 brew cask install sourcetree
 brew cask install snagit
@@ -211,16 +211,21 @@ brew cleanup
 # Install applications with mas-cli (Mac App Store CLI)
 ###############################################################################
 echo "mas-cli: installing Mac App Store apps..."
-# DaisyDisk
-mas install 411643860
-# OneDrive
-mas install 823766827
-# Todoist
-mas install 585829637
-# Deliveries
-mas install 924726344
-# Neptunes
-mas install 1006739057
+
+mas install 411643860 # DaisyDisk
+mas install 823766827 # OneDrive
+mas install 585829637 # Todoist
+mas install 924726344 # Deliveries
+mas install 1006739057 # Neptunes
+mas install 1402042596 # AdBlock
+mas install 497799835 # Xcode
+mas install 425955336 # Skitch
+mas install 1018899653 # HeliumLift
+mas install 1142578753 # OmniGraffle
+mas install 568494494 # Pocket
+mas install 1147396723 # WhatsApp
+mas install 1404231964 # UPRIGHT GO Desktop
+mas install 1090488118 # Gemini 2
 
 ###############################################################################
 # Install fonts for iTerm
