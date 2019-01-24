@@ -178,7 +178,6 @@ brew cask install smcfancontrol
 brew cask install homebrew/cask-drivers/razer-synapse
 brew cask install parsec
 brew cask install onedrive
-brew cask install spotify
 brew cask install homebrew/cask-drivers/synology-cloud-station-backup
 brew cask install homebrew/cask-drivers/synology-drive
 brew cask install timing
@@ -208,7 +207,8 @@ echo "Opening installers..."
 
 echo "Opening Installer: Adobe Creative Cloud"
 open /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.app/
-
+echo "Opening Installer: Backblaze"
+open /usr/local/Caskroom/backblaze/latest/Backblaze\ Installer.app/
 
 ###############################################################################
 # Cleanup
@@ -222,7 +222,6 @@ brew cleanup
 echo "mas-cli: installing Mac App Store apps..."
 
 mas install 411643860 # DaisyDisk
-mas install 823766827 # OneDrive
 mas install 585829637 # Todoist
 mas install 924726344 # Deliveries
 mas install 1006739057 # Neptunes
@@ -232,7 +231,6 @@ mas install 425955336 # Skitch
 mas install 1018899653 # HeliumLift
 mas install 1142578753 # OmniGraffle
 mas install 568494494 # Pocket
-mas install 1147396723 # WhatsApp
 mas install 1404231964 # UPRIGHT GO Desktop
 mas install 1090488118 # Gemini 2
 
