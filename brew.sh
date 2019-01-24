@@ -96,7 +96,9 @@ brew install wakeonlan
 brew install grep
 brew install openssh
 brew install screen
-
+brew install ansible
+brew install cask-repair
+brew install hub
 
 ###############################################################################
 # Run Homebrew cleanup to remove installation/cached files
@@ -171,7 +173,6 @@ brew cask install minishift
 brew cask install joinme
 brew cask install cyberduck
 brew cask install mongodb-compass
-brew cask install snagit
 brew cask install camtasia
 brew cask install smcfancontrol
 brew cask install homebrew/cask-drivers/razer-synapse
@@ -190,7 +191,15 @@ brew cask install wireshark
 brew cask install spotify-notifications
 brew cask install tunnelblick
 brew cask install evernote
-
+brew cask install cubicsdr
+brew cask install twitch
+brew cask install steam
+brew cask install royal-tsx
+brew cask install origin
+brew cask install minecraft
+brew cask install grammarly
+brew cask install epic-games
+brew cask install audio-hijack
 
 ###############################################################################
 # Execute installers downloaded with Homebrew Cask
