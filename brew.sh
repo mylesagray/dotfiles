@@ -56,6 +56,10 @@ brew install moreutils
 # Install binaries and other packages
 ###############################################################################
 echo "Homebrew: installing binaries and other packages..."
+brew tap starkandwayne/cf azure/draft beeftornado/rmtree cloudfoundry/tap govmomi/tap heroku/brew homebrew/bundle
+brew tap homebrew/cask homebrew/cask-drivers homebrew/cask-eid homebrew/cask-fonts homebrew/cask-versions
+brew tap homebrew/core starkandwayne/cf
+
 brew install ansible
 brew install asciinema
 brew install cloudfoundry/tap/bosh-cli
@@ -88,9 +92,9 @@ brew install starkandwayne/cf/uaa-cli
 brew install tree
 brew install wakeonlan
 brew install watch
-brew install wget --with-iri
+brew install wget
+
 brew link --force git
-brew tap starkandwayne/cf
 sudo easy_install pip
 
 ###############################################################################
@@ -177,6 +181,11 @@ open /usr/local/Caskroom/backblaze/latest/Backblaze\ Installer.app/
 # Cleanup
 ###############################################################################
 brew cleanup
+
+###############################################################################
+# Go stuff
+###############################################################################
+go get -u sigs.k8s.io/kind
 
 
 ###############################################################################
