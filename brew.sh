@@ -57,12 +57,9 @@ brew install moreutils
 ###############################################################################
 echo "Homebrew: installing binaries and other packages..."
 brew tap starkandwayne/cf
-brew install ffmpeg --with-libvpx
 brew install git
 brew link --force git
 brew install heroku/brew/heroku
-brew install httpie
-brew install imagemagick --with-webp
 brew install mackup
 brew install mas
 brew install node
@@ -84,20 +81,16 @@ brew install nmap
 brew install starkandwayne/cf/om
 brew install starkandwayne/cf/uaa-cli
 brew install openshift-cli
-brew install sqlite
 brew install watch
 brew install draft
 brew install f3
 brew install faas-cli
 brew install git-flow-avh
 brew install jq
-brew install kops
 brew install wakeonlan
 brew install grep
 brew install openssh
-brew install screen
 brew install ansible
-brew install cask-repair
 brew install hub
 
 ###############################################################################
