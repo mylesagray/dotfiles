@@ -1,8 +1,7 @@
 brew update
 brew upgrade
 brew cleanup -s
-brew cask upgrade --greedy
-brew prune
+brew cask upgrade
 brew doctor
 brew missing
 mas outdated
