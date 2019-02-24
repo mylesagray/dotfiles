@@ -56,78 +56,48 @@ brew install moreutils
 # Install binaries and other packages
 ###############################################################################
 echo "Homebrew: installing binaries and other packages..."
-brew tap starkandwayne/cf
-brew install git
-brew link --force git
-brew install heroku/brew/heroku
-brew install mackup
-brew install mas
-brew install node
-brew install nvm
-brew install npm
-brew install python
-sudo easy_install pip
-brew install tree
-brew install wget --with-iri
-brew install kubernetes-cli
-brew install kubernetes-helm
+brew install ansible
 brew install asciinema
 brew install cloudfoundry/tap/bosh-cli
-brew install go
-brew install govmomi/tap/govc
-brew install kubectx
-brew install lolcat
-brew install nmap
-brew install starkandwayne/cf/om
-brew install starkandwayne/cf/uaa-cli
-brew install openshift-cli
-brew install watch
 brew install draft
 brew install f3
 brew install faas-cli
+brew install git
 brew install git-flow-avh
-brew install jq
-brew install wakeonlan
+brew install go
+brew install govmomi/tap/govc
 brew install grep
-brew install openssh
-brew install ansible
+brew install heroku/brew/heroku
 brew install hub
+brew install jq
+brew install kubectx
+brew install kubernetes-cli
+brew install kubernetes-helm
+brew install lolcat
+brew install mackup
+brew install mas
+brew install nmap
+brew install node
+brew install npm
+brew install nvm
+brew install openshift-cli
+brew install openssh
+brew install python
+brew install starkandwayne/cf/om
+brew install starkandwayne/cf/uaa-cli
+brew install tree
+brew install wakeonlan
+brew install watch
+brew install wget --with-iri
+brew link --force git
+brew tap starkandwayne/cf
+sudo easy_install pip
 
 ###############################################################################
 # Run Homebrew cleanup to remove installation/cached files
 ###############################################################################
 echo "Homebrew: cleaning up..."
 brew cleanup
-
-
-###############################################################################
-# Install Node Packages with NPM
-###############################################################################
-#echo "Node: installing Yarn/NPM packages…"
-#yarn global add @squarespace/server
-#yarn global add contentful-cli
-#yarn global add eslint
-#yarn global add firebase-tools
-#yarn global add grunt-cli
-#yarn global add gulp
-#yarn global add http-server
-#yarn global add hpm-cli
-#yarn global add imageoptim-cli
-#yarn global add js-beautify
-#yarn global add markdown-pdf
-#yarn global add netlify-cli
-#yarn global add newman
-#yarn global add nodemon
-#yarn global add now
-#yarn global add squarespace-cli
-#yarn global add svgo
-#yarn global add uglify
-#yarn global add ultradns-node-cli
-#yarn global add vue-cli
-#yarn global add webpack
-#yarn global add webpack-dev-server
-#yarn global add wt-cli
-
 
 ###############################################################################
 # Install applications with Homebrew Cask
@@ -136,62 +106,62 @@ echo "Homebrew Cask: installing apps..."
 brew cask install 1password
 brew cask install adobe-creative-cloud
 brew cask install alfred
+brew cask install audio-hijack
+brew cask install backblaze
+brew cask install camtasia
+brew cask install charles
 brew cask install cleanmymac
+brew cask install cubicsdr
+brew cask install cyberduck
 brew cask install dash
 brew cask install discord
-brew cask install homebrew/cask-versions/docker-edge
 brew cask install dropbox
-brew cask install google-cloud-sdk
+brew cask install epic-games
+brew cask install evernote
 brew cask install google-chrome
+brew cask install google-cloud-sdk
+brew cask install grammarly
+brew cask install homebrew/cask-drivers/razer-synapse
+brew cask install homebrew/cask-drivers/synology-cloud-station-backup
+brew cask install homebrew/cask-drivers/synology-drive
+brew cask install homebrew/cask-versions/docker-edge
 brew cask install iterm2
+brew cask install joinme
 brew cask install kaleidoscope
+brew cask install microsoft-teams
+brew cask install minecraft
+brew cask install minikube
+brew cask install minishift
+brew cask install mongodb-compass
 brew cask install obs
+brew cask install onedrive
+brew cask install origin
+brew cask install parsec
+brew cask install plex-media-player
 brew cask install postman
 brew cask install powershell
+brew cask install private-internet-access
+brew cask install royal-tsx
+brew cask install slack-beta
+brew cask install smcfancontrol
+brew cask install snagit
+brew cask install sourcetree
+brew cask install spotify
+brew cask install spotify-notifications
+brew cask install steam
+brew cask install the-unarchiver
+brew cask install timing
+brew cask install tunnelblick
+brew cask install twitch
 brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install virtualbox
-brew cask install slack-beta
-brew cask install spotify
-brew cask install sourcetree
-brew cask install snagit
-brew cask install vlc
-brew cask install microsoft-teams
-brew cask install vmware-fusion
 brew cask install visual-studio-code
-brew cask install the-unarchiver
+brew cask install vlc
+brew cask install vmware-fusion
 brew cask install whatsapp
-brew cask install minikube
-brew cask install minishift
-brew cask install joinme
-brew cask install cyberduck
-brew cask install mongodb-compass
-brew cask install camtasia
-brew cask install smcfancontrol
-brew cask install homebrew/cask-drivers/razer-synapse
-brew cask install parsec
-brew cask install onedrive
-brew cask install homebrew/cask-drivers/synology-cloud-station-backup
-brew cask install homebrew/cask-drivers/synology-drive
-brew cask install timing
-brew cask install plex-media-player
-brew cask install backblaze
-brew cask install charles
-brew cask install zoomus
-brew cask install private-internet-access
 brew cask install wireshark
-brew cask install spotify-notifications
-brew cask install tunnelblick
-brew cask install evernote
-brew cask install cubicsdr
-brew cask install twitch
-brew cask install steam
-brew cask install royal-tsx
-brew cask install origin
-brew cask install minecraft
-brew cask install grammarly
-brew cask install epic-games
-brew cask install audio-hijack
+brew cask install zoomus
 
 ###############################################################################
 # Execute installers downloaded with Homebrew Cask
